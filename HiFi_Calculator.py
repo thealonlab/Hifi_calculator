@@ -33,7 +33,7 @@ def main():
 
     # Input fields for the assembly calculation
     st.header("Insert Calculation")
-    vector_concentration = st.slider("Enter vector concentration (ng/µl):", min_value=1, max_value=500, value=50)
+    vector_concentration = st.number_input("Enter vector concentration (ng/µl):", min_value=1, max_value=500, value=50)
     vector_length = st.number_input("Enter vector length (bp):", min_value=1, value=5000, step=1)
     insert_length = st.number_input("Enter insert length (bp):", min_value=1, value=500, step=1)
     molar_ratio = st.number_input("Enter molar ratio:", min_value=1, value=2, step=1)
