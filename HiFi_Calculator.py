@@ -72,8 +72,9 @@ def main():
             st.error(error)
         else:
             st.success(f"""### To achieve {insert_amount} ng in {desired_insert_volume} µl, mix:
-- **1 µl** of the current **{current_concentration} ng/µl** insert solution  
-- **{round(dilution_volume-1, 2)} µl** of water""")
+- **5 µl** of the current **{current_concentration} ng/µl** insert solution  
+- **{round(dilution_volume-1, 2)*5} µl** of water\n
+and take {desired_insert_volume} µl to your reaction""")
 
 
 if __name__ == "__main__":
